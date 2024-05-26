@@ -1,0 +1,485 @@
+{%extends 'app/baseBlog.html'%}
+{%load  static  %}
+{% block main-content%}
+<body>
+    <header>
+        <div class="top">
+            <nav class="container">
+               <div class="nav1 flex">
+                   <div class="icons flex">
+                    <div class="search-box flex ">
+                       <div class="input-box ">
+                           <input type="text" placeholder="Search">
+                       </div>
+                       <div>
+                       <i class="fa-solid fa-magnifying-glass"></i>
+                   </div>
+                    </div>
+                       <a href="https://www.facebook.com/tiencuong.phung.39"><i class="fa-brands fa-facebook-f"></i></a>
+                       <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                       <a href="https://support.google.com/answer/2451065?hl=en"><i class="fa-brands fa-google-plus-g"></i></a>
+                       <a href="https://www.youtube.com/watch?v=dfI-wUKWvNw"><i class="fa-brands fa-youtube"></i></a>
+                       <a href="https://www.instagram.com/i_am_young22/"><i class="fa-brands fa-instagram"></i></a>
+                       <i class="fa-brands fa-twitch"><a href="http://"></a></i>
+                   </div>
+                   <div class="lsbtn flex">
+                       <button>LOGIN</button>
+                       <button>SIGN UP</button>
+                   </div>
+               </div>
+               <div class="mainnav flex">
+                   <div class="logo">
+                     <h1><a href="/main/index.html">WEEB<span>XGAME</span></a></h1>
+                   </div>
+                   <div class="navlist">
+                       <ul class="flex">
+                           <li><a href="/main/index.html" >Home</a></li>                
+                           <li><a href="/blog/blog.html" class="active">Blog</a></li>
+                           <li class="uls"><a href="/">Games<i class="fa-solid fa-angle-down"></i></a>
+                             <ul class="dropdown ">
+                               <li class="lis"><a href="">ACTION</a></li>
+                               <li class="lis"><a href="">ADVANTURE</a></li>
+                               <li class="lis"><a href="">RACING</a></li>
+                               <li class="lis"><a href="">FPS</a></li>
+                             </ul>
+                           </li>
+                           <li><a href="/">Community</a></li>
+                           <li><a href="/">eSport</a></li>
+                           <li><a href="/">Pages<i class="fa-solid fa-angle-down"></i></a></li>
+                           <li><a href="/">Contact</a></li>
+                       </ul>
+                   </div>
+               </div>
+            </nav>
+           </div>
+    </header>
+
+
+    <!-- Post Slider -->
+    <div class="page-wrapper" >
+        <div class="post-slider">
+            <h1 class="slider-title">Trending Posts</h1>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+
+            <div class="post-wrapper">
+                <div class="post">
+                    <img src={%static 'app/img/aatrox.jpg' %} alt="" class="slider-image">
+                    <div class="post-info">
+                        <h3><a href="single.html">Aatrox is finally balanced</a></h3>
+                        <p>Author: Zeus God of Thunder</p>
+                        <p>Published: Febuary 6, 2024</p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src={%static 'app/img/palworld.jpg' %} alt="" class="slider-image">
+                    <div class="post-info">
+                        <h3><a href="single.html">Palworld breaking Steam sale record</a></h3>
+                        <p>Author: Michael Jordan</p>
+                        <p>Published: Febuary 1, 2024</p>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <img src={%static 'app/img/raidenshogun.jpg' %} alt="" class="slider-image">
+                    <div class="post-info">
+                        <h3><a href="single.html">Raiden Shogun has a huge sword</a></h3>
+                        <p>Author: Average Genshin Player</p>
+                        <p>Published: Febuary 3, 2024</p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src={%static 'app/img/makima.jpg' %} alt="" class="slider-image">
+                    <div class="post-info">
+                        <h3><a href="single.html">The most powerful dog owner</a></h3>
+                        <p>Author: Denji</p>
+                        <p>Published: January 27, 2024</p>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <img src={%static 'app/img/pikachu.jpg' %} alt="" class="slider-image">
+                    <div class="post-info">
+                        <h3><a href="single.html">Pikachu identified as a cat or a dog?</a></h3>
+                        <p>Author: noname</p>
+                        <p>Published: Febuary 1, 2024</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- main content -->
+    <div class="content clearfix">
+        <div class="main-content">
+            <h1 class="recent-post-title">Recent Posts</h1>
+            
+            <div class="post">
+                <img src={%static 'app/img/arcane.jpg' %} alt="" class="post-image">
+                <div class="post-preview">
+                    <h2><a href="single.html">Arcane season 2 is officially announced</a></h2>
+                    <p>Author: Zayn Malik</p>
+                    <p>Published: Febuary 6, 2024 </p>
+                    <p class="preview-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius nisi dolores voluptatem odit doloremque.
+                    </p>
+                    <a href="single.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src={%static 'app/img/edgerunners.jpg' %} alt="" class="post-image">
+                <div class="post-preview">
+                    <h2><a href="single.html">Cyberpunk: Edgerunners win anime of the year</a></h2>
+                    <p>Author: Weebo Veteran</p>
+                    <p>Published: Febuary 6, 2024 </p>
+                    <p class="preview-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius nisi dolores voluptatem odit doloremque.
+                    </p>
+                    <a href="single.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src={%static 'app/img/queenbee.png' %} alt="" class="post-image">
+                <div class="post-preview">
+                    <h2><a href="single.html">Queen Bee will get anime adaptation in 2025</a></h2>
+                    <p>Author: Alice Nanase</p>
+                    <p>Published: Febuary 6, 2024 </p>
+                    <p class="preview-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius nisi dolores voluptatem odit doloremque.
+                    </p>
+                    <a href="single.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src={%static 'app/img/gta6.jpg' %} alt="" class="post-image">
+                <div class="post-preview">
+                    <h2><a href="single.html">GTA 6 release date announced</a></h2>
+                    <p>Author: Zayn Malik</p>
+                    <p>Published: Febuary 6, 2024 </p>
+                    <p class="preview-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius nisi dolores voluptatem odit doloremque.
+                    </p>
+                    <a href="single.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img src={%static 'app/img/fifa.jpg' %} alt="" class="post-image">
+                <div class="post-preview">
+                    <h2><a href="single.html">EA FIFA is losing popularity</a></h2>
+                    <p>Author: Aizawa Minamino</p>
+                    <p>Published: Febuary 6, 2024 </p>
+                    <p class="preview-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius nisi dolores voluptatem odit doloremque.
+                    </p>
+                    <a href="single.html" class="btn read-more">Read More</a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Search bar and selection bar-->
+        <div class="sidebar">
+            <div class="section search">
+                <h2 class="section-title">Search</h2>
+                <form action="blog.html" method="post">
+                    <input type="text" name="search-term" class="text-input" placeholder="Search...">
+                </form>
+            </div>
+            
+            <div class="section topics">
+                <h2 class="section-title">Topics</h2>
+                <ul>
+                    <li><a href='#'>Announcements</a></li>
+                    <li><a href='#'>News</a></li>
+                    <li><a href='#'>Industry</a></li>
+                    <li><a href='#'>Anime</a></li>
+                    <li><a href='#'>Esports</a></li>
+                    <li><a href='#'>League of Legends</a></li>
+                    <li><a href='#'>Genshin Impact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- content filter -->
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">All</span>
+        <span class="filter-item" data-filter="Announcements">Announcements</span>
+        <span class="filter-item" data-filter="News">News</span>
+        <span class="filter-item" data-filter="Industry">Industry</span>
+        <span class="filter-item" data-filter="Anime">Anime</span>
+        <span class="filter-item" data-filter="Esports">Esports</span>
+        <span class="filter-item" data-filter="LOL">League of Legends</span>
+        <span class="filter-item" data-filter="Genshin">Genshin Impact</span>
+    </div>
+
+
+    <!-- content for content filter -->
+    <div class="postt container">
+        <div class="postt-box Announcements">
+            <img src={%static 'app/img/filter1.jpg' %} alt="" class="postt-picture">
+            <h2 class="category">Announcements</h2>
+            <a href="single.html" class="postt-title">God of War Valhalla release date</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src={%static 'app/img/arcane.jpg' %} alt="" class="profile-img">
+                <span class="profile-name">Osama Biladen</span>
+            </div>
+        </div>
+
+        <div class="postt-box Announcements">
+            <img src={%static 'app/img/arcane.jpg' %} alt="" class="postt-picture">
+            <h2 class="category">Announcements</h2>
+            <a href="single.html" class="postt-title">Arcane season 2 is officially announced</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src={%static 'app/img/arcane.jpg' %} alt="" class="profile-img">
+                <span class="profile-name">Bill Cliton</span>
+            </div>
+        </div>
+
+        <div class="postt-box Announcements">
+            <img src={%static 'app/img/gta6.jpg' %} alt="" class="postt-picture">
+            <h2 class="category">Announcements</h2>
+            <a href="single.html" class="postt-title">GTA 6 release date announced</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src={%static 'app/img/arcane.jpg' %} alt="" class="profile-img">
+                <span class="profile-name">SKT</span>
+            </div>
+        </div>
+
+        <div class="postt-box News">
+            <img src={%static 'app/img/filter2.jpg' %} alt="" class="postt-picture">
+            <h2 class="category">News</h2>
+            <a href="single.html" class="postt-title">Bill Gates used to be a game addict</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src={%static 'app/img/arcane.jpg' %} alt="" class="profile-img">
+                <span class="profile-name">Bill Gates' ex-wife</span>
+            </div>
+        </div>
+
+        <div class="postt-box News">
+            <img src={%static 'app/img/filter3.jpg' %} alt="" class="postt-picture">
+            <h2 class="category">News</h2>
+            <a href="single.html" class="postt-title">Biden admitted he likes playing Loli Sim</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src={%static 'app/img/arcane.jpg' %} alt="" class="profile-img">
+                <span class="profile-name">Obama</span>
+            </div>
+        </div>
+
+        <div class="postt-box News">
+            <img src={%static 'app/img/filter4.jpg' %} alt="" class="postt-picture">
+            <h2 class="category">News</h2>
+            <a href="single.html" class="postt-title">Playing games make people smarter</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">Trust me bro</span>
+            </div>
+        </div>
+
+        <div class="postt-box Industry">
+            <img src="image/fifa.jpg" alt="" class="postt-picture">
+            <h2 class="category">Industry</h2>
+            <a href="single.html" class="postt-title">EA FIFA is losing popularity</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">A FIFA enjoyer</span>
+            </div>
+        </div>
+
+        <div class="postt-box Industry">
+            <img src="image/filter5.jpg" alt="" class="postt-picture">
+            <h2 class="category">Industry</h2>
+            <a href="single.html" class="postt-title">Nintendo sued a youtuber for playing their game</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">A Nintendo Employee</span>
+            </div>
+        </div>
+
+        <div class="postt-box Industry">
+            <img src="image/pikachu.jpg" alt="" class="postt-picture">
+            <h2 class="category">Industry</h2>
+            <a href="single.html" class="postt-title">Pikachu identified as a dog or a cat?</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">Homeless cat</span>
+            </div>
+        </div>
+
+        <div class="postt-box Anime">
+            <img src="image/edgerunners.jpg" alt="" class="postt-picture">
+            <h2 class="category">Anime</h2>
+            <a href="single.html" class="postt-title">Cyberpunk Edgerunners win anime of the year</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">Anime forum</span>
+            </div>
+        </div>
+
+        <div class="postt-box Anime">
+            <img src="image/queenbee.png" alt="" class="postt-picture">
+            <h2 class="category">Anime</h2>
+            <a href="single.html" class="postt-title">Queen Bee will get anime adaptation in 2025</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">Manhwa 18+ enjoyer</span>
+            </div>
+        </div>
+
+        <div class="postt-box Anime">
+            <img src="image/makima.jpg" alt="" class="postt-picture">
+            <h2 class="category">Anime</h2>
+            <a href="single.html" class="postt-title">The world most powerful dog owner</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">Makima's dog</span>
+            </div>
+        </div>
+
+        <div class="postt-box Esports">
+            <img src="image/filter6.jpg" alt="" class="postt-picture">
+            <h2 class="category">Esports</h2>
+            <a href="single.html" class="postt-title">GenG finally beat a chinese esports team</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">Little Chovy</span>
+            </div>
+        </div>
+
+        <div class="postt-box Esports">
+            <img src="image/filter7.jpeg" alt="" class="postt-picture">
+            <h2 class="category">Esports</h2>
+            <a href="single.html" class="postt-title">G2 Rainbow Six team win the biggest trophy of the year</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">Eu is the best region</span>
+            </div>
+        </div>
+
+        <div class="postt-box Esports">
+            <img src="image/filter8.jpg" alt="" class="postt-picture">
+            <h2 class="category">Esports</h2>
+            <a href="single.html" class="postt-title">GAM finished 6th in VCS and miss Worlds</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">VCS wet dream</span>
+            </div>
+        </div>
+
+        <div class="postt-box LOL">
+            <img src="image/aatrox.jpg" alt="" class="postt-picture">
+            <h2 class="category">LOL</h2>
+            <a href="single.html" class="postt-title">Aatrox is finally balanced</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">Zeus god of thunder</span>
+            </div>
+        </div>
+
+        <div class="postt-box LOL">
+            <img src="image/filter9.jpg" alt="" class="postt-picture">
+            <h2 class="category">LOL</h2>
+            <a href="single.html" class="postt-title">Little Chovy destroy wild rift challenger rank</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">Cuongdeptrai</span>
+            </div>
+        </div>
+
+        <div class="postt-box LOL">
+            <img src="image/filter10.jpg" alt="" class="postt-picture">
+            <h2 class="category">LOL</h2>
+            <a href="single.html" class="postt-title">Yuumi will be remove from League of Legends</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">Gamer wet dream</span>
+            </div>
+        </div>
+
+        <div class="postt-box Genshin">
+            <img src="image/filter11.jpg" alt="" class="postt-picture">
+            <h2 class="category">Genshin</h2>
+            <a href="single.html" class="postt-title">Beryl want to have a Genshin Worlds champion skin</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">DRX is a fraud</span>
+            </div>
+        </div>
+
+        <div class="postt-box Genshin">
+            <img src="image/filter12.jpg" alt="" class="postt-picture">
+            <h2 class="category">Genshin</h2>
+            <a href="single.html" class="postt-title">Kazuha is not a Lesserafim member</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">KPOP addict</span>
+            </div>
+        </div>
+
+        <div class="postt-box Genshin">
+            <img src="image/raidenshogun.jpg" alt="" class="postt-picture">
+            <h2 class="category">Genshin</h2>
+            <a href="single.html" class="postt-title">Raiden Shogun has a very huge sword</a> 
+            <span class="postt-date">Febuary 6, 2024</span>
+            <p class="postt-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deleniti tempore, quas vel a.</p>
+            <div class="profile">
+                <img src="image/arcane.jpg" alt="" class="profile-img">
+                <span class="profile-name">Shogun booba enthusiast</span>
+            </div>
+        </div>
+
+    </div>
+{%endblock main-content%}
